@@ -1,0 +1,35 @@
+//Armstrong Number Program
+
+import java.util.Scanner;
+class Armstrong{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+
+System.out.println("Enter the number = ");
+int num=sc.nextInt();
+
+int rem;
+int sum=0;
+int temp;
+temp=num;
+while(temp>0)
+{
+rem=temp%10;
+sum=sum+(rem*rem*rem);
+temp=temp/10;
+}
+if(sum==num)
+{
+System.out.println("Armstrong no");
+}
+else
+{
+System.out.println("Not an armstrong no");
+}
+
+
+}
+
+
+}
